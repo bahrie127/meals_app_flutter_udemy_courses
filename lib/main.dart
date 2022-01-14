@@ -4,6 +4,7 @@ import './screens/category_meal_screen.dart';
 
 import './screens/categories_screen.dart';
 import './dummy_data.dart';
+import './screens/filters_screen.dart';
 
 void main() {
   runApp(MyApp());
@@ -37,7 +38,8 @@ class MyApp extends StatelessWidget {
       home: CategoriesScreen(),
       routes: {
         CategoryMealsScreen.routeName: (ctx) =>
-            CategoryMealsScreen(availableMeals: _availableMeals)
+            CategoryMealsScreen(availableMeals: _availableMeals),
+        FiltersScreen.routeName: (ctx) => FiltersScreen(),
       },
     );
   }
